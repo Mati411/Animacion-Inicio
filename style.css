@@ -70,10 +70,10 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: default; */
-    width: 100%;
-    height: 100%;
+    width: 9%;
+    height: 67%;
     position: absolute;
-    background: url(images/semi-be.png) no-repeat;
+    background: url(images/be.png) no-repeat;
     background-size: 100%;
     bottom: -100px;
 }
@@ -177,7 +177,7 @@ body {
     }
 
     100% {
-        width: 100px;
+        width: 75px;
         height: 15px;
         border-radius: 15px;
         background-color: #1C3D7E;
@@ -185,12 +185,16 @@ body {
 }
 
 @keyframes cortinaIntro {
-    from {
+    0% {
         height: 100vh;
         top: 0;
     }
 
-    to {
+    90% {
+        z-index: auto;
+    }
+
+    100% {
         height: 100px;
         position: fixed;
         top: 0;
@@ -199,26 +203,44 @@ body {
 }
 
 @keyframes resizeTitulo {
-    from {
-        font-size: 150px;
+    0% {
+        /* font-size: 150px;
         position: relative;
         bottom: 0;
-        letter-spacing: -25px;
+        letter-spacing: -25px; */
+        width: 9%;
+        height: 67%;
     }
 
-    to {
+    99% {
+        background: url(images/be.png) no-repeat;
+        background-size: 100%;
+        width: 100%;
+        height: 100%;
+    }
+
+    100% {
         /* font-size: 1370px;
         width: 100vw;
         position: relative;
         bottom: -400px; */
         /* margin-left: -123px; */
         /* letter-spacing: -175px; */
-        font-size: 80vw;
+        /* * */
+        /* font-size: 80vw;
         width: 102vw;
         position: relative;
         bottom: -400px;
         text-align: center;
         margin-left: -17.5vw;
-        letter-spacing: -200px;
+        letter-spacing: -200px; */
+        /* * */
+        /* width: 100.5%;
+        height: 100%; */
+        /* * */
+        background: url(images/semi-be.png) no-repeat;
+        background-size: 100%;
+        width: 100%;
+        height: 100%;
     }
 }
