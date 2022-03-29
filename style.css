@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Comfortaa', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.cortina {
+    width: 102%;
+    height: 102%;
+    background-color: #1C3D7E;
+    color: #fff;
+    position: absolute;
+}
+
+.intro-borde {
+    border: 15px solid #fff;
+    width: 325px;
+    height: 325px;
+    position: absolute;
+    border-radius: 50%;
+    border-left-color: transparent;
+    animation: roll infinite 2.5s;
+}
+
+.intro-circulo {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    position: absolute;
+}
+
+.intro-texto {
+    width: 30%;
+    position: absolute;
+    text-align: center;
+    color: #1C3D7E;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 200px;
+    line-height: 45px;
+    letter-spacing: -1px;
+    opacity: 0;
+}
+
+.intro-titulo {
+    /* font-size: 150px;
+    width: 175px;
+    position: absolute;
+    background-color: red;
+    letter-spacing: -25px;
+    font-weight: 500;
+    background: linear-gradient(to right, #ECBA44, #F0A553, #FB707B, #FF5C8A, #CD5587, #824B83, #4B4380, #293F7F, #1C3D7E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: default; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(images/semi-be.png) no-repeat;
+    background-size: 100%;
+    bottom: -100px;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    padding: 10px 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    opacity: 0;
+}
+
+.navbar-logo {
+    height: 100%;
+    width: 394.08px;
+    background: url(images/logo.png) no-repeat;
+    background-size: 50%;
+    cursor: pointer;
+}
+
+.navbar-lista {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar-lista>li {
+    margin: 0 30px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.dash {
+    height: 5px;
+    width: 5px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-inline: 50%;
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+}
+
+.navbar-lista>li:hover>.dash {
+    width: 100%;
+    margin-inline: 0;
+}
+
+/* * -------------------------- ANIMACIONES -------------------------- * */
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes unsize {
+    0% {
+        width: 230px;
+        height: 230px;
+    }
+
+    75% {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #1C3D7E;
+    }
+
+    100% {
+        width: 100px;
+        height: 15px;
+        border-radius: 15px;
+        background-color: #1C3D7E;
+    }
+}
+
+@keyframes cortinaIntro {
+    from {
+        height: 100vh;
+        top: 0;
+    }
+
+    to {
+        height: 100px;
+        position: fixed;
+        top: 0;
+        z-index: 99999;
+    }
+}
+
+@keyframes resizeTitulo {
+    from {
+        font-size: 150px;
+        position: relative;
+        bottom: 0;
+        letter-spacing: -25px;
+    }
+
+    to {
+        /* font-size: 1370px;
+        width: 100vw;
+        position: relative;
+        bottom: -400px; */
+        /* margin-left: -123px; */
+        /* letter-spacing: -175px; */
+        font-size: 80vw;
+        width: 102vw;
+        position: relative;
+        bottom: -400px;
+        text-align: center;
+        margin-left: -17.5vw;
+        letter-spacing: -200px;
+    }
+}
