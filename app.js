@@ -11,6 +11,6 @@ setTimeout(() => {
     backgroundLogo.style.animation = 'unsize 1.5s ease-in-out forwards';
     border.style.animation = 'fadeOut .5s ease-in-out forwards';
     logo.style.animation = 'resizeTitulo 1.5s ease-in-out forwards';
-    navbar.style.animation = 'fadeIn 2s ease-in-out forwards';
+    navbar.style.animation = 'fadeIn 1s ease-in-out forwards';
     textoPostIntro.style.animation = 'fadeIn 2.5s ease-in-out forwards';
 }, 2450);
